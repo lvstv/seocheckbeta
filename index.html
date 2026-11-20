@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Универсальный чек-лист технического SEO-аудита для Google и Яндекса.">
+  <title>SEO Technical Audit Toolkit — v0.1.0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="SEO Technical Audit Toolkit">
+      <span class="brand-mark">SEO</span>
+      <span><strong>Technical Audit Toolkit</strong><small>Практический чек-лист аудита</small></span>
+    </a>
+    <div class="top-meta"><span class="version">v0.1.0</span><span class="save-state" id="saveState">Локальное сохранение</span></div>
+  </header>
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="side-heading">РАЗДЕЛЫ АУДИТА</div>
+      <nav id="sectionNav" aria-label="Разделы чек-листа"></nav>
+      <div class="sidebar-note">Отметки сохраняются в этом браузере на этом устройстве.</div>
+    </aside>
+    <section class="content">
+      <div class="intro">
+        <div>
+          <div class="eyebrow">MASTER CHECKLIST · GOOGLE + ЯНДЕКС</div>
+          <h1>Техническая оптимизация сайта</h1>
+          <p>Универсальный рабочий инструмент для проведения и документирования SEO-аудита.</p>
+        </div>
+        <div class="overall"><strong id="overallPercent">0%</strong><span>общий прогресс</span></div>
+      </div>
+      <div class="progress-track"><div id="overallBar"></div></div>
+      <div class="toolbar">
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Найти проверку…"></label>
+        <button class="button button-quiet" id="resetButton" type="button">Сбросить отметки</button>
+      </div>
+      <div id="sectionContent" aria-live="polite"></div>
+      <footer>SEO Technical Audit Toolkit <span>·</span> v0.1.0 <span>·</span> Содержимое чек-листа будет расширяться по версиям</footer>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
